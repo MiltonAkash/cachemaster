@@ -1,0 +1,9 @@
+{
+  "name": "cachemaster",
+  "version": "1.0.0",
+  "description": "Manages cache for web using local storage.",
+  "main": "index.js",
+  "repository": "https://github.com/MiltonAkash/cachemaster.git",
+  "author": "Akash Milton M",
+  "license": "MIT"
+}
