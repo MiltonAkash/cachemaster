@@ -5,5 +5,13 @@
   "main": "index.js",
   "repository": "https://github.com/MiltonAkash/cachemaster.git",
   "author": "Akash Milton M",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "global": "^4.3.2"
+  },
+  "devDependencies": {
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8"
+  }
 }
