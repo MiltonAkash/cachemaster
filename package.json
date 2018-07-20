@@ -1,14 +1,13 @@
 {
-  "name": "cachemaster",
+  "name": "cache-master",
   "version": "1.0.0",
-  "description": "Manages cache for web using local storage.",
-  "main": "index.js",
+  "description": "Cache manager for application using various storage medium.",
+  "main": "src/index.js",
   "repository": "https://github.com/MiltonAkash/cachemaster.git",
   "author": "Akash Milton M",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
-    "global": "^4.3.2"
+    "axios": "^0.18.0"
   },
   "devDependencies": {
     "webpack": "^4.12.1",

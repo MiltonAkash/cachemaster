@@ -1,25 +1,29 @@
 class localStorageConnector{
-	constructor( config ){
-		this.config = config;
+	constructor(){
 	}
 
-	this.get( key ){
-		return localStorage[key];
+	get( key ){
+		return window.localStorage[key] && JSON.parse(window.localStorage[key]) || null;
 	}
 
-	this.post = ( key , val ) => {
-		return localStorage[key] = val;
+	post( key , val ){
+		return window.localStorage[key] = JSON.stringify(val);
 	}
 
-	this.delete = ( key ) => {
-		delete localStorage[key]
+	delete( key ){
+		delete window.localStorage[key]
 	}
 
 
-	this.list = () => {
-		return Object.keys(localStorage);
+	list() {
+		return Object.keys(window.localStorage);
 	}
+
+	clear() {
+		return window.localStorage.clear();
+	}
+
 
 }
 
-export default localStorageConnector;
+module.exports = localStorageConnector;

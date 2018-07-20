@@ -1,6 +1,32 @@
 <html>
 <head>
 	<script src="../dist/bundle.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+
+
+		let cm = new CacheMaster();
+
+		console.log("Before",localStorage);
+		let fetch = cm.fetch('/news',10,{method:'GET',url:"https://api.themoviedrug.com/api/v1/news"})
+		fetch.then((x,trigger) =>console.log(x,trigger));
+		cm.clean();
+	</script>
+	<script>
+
+	</script>
 </head>
+<body>
+<div>
+
+</div>
+<div>
+	<h2>Fetched Results</h2>
+</div>
+	<inputtype="text">
+	<input
+	<button onClick="fetch()">Fetch</button>
+
+</body>
 
 </html>
