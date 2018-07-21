@@ -1,8 +1,9 @@
 {
   "name": "cache-master",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cache manager for application using various storage medium.",
   "main": "src/index.js",
+  "email":"mil10akash@gmail.com",
   "repository": "https://github.com/MiltonAkash/cachemaster.git",
   "author": "Akash Milton M",
   "license": "MIT",
